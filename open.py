@@ -272,11 +272,3 @@ async def process_vote_done(callback_query: types.CallbackQuery):
 if __name__ == '__main__':
     executor.start_polling(dispatcher, skip_updates=True)
 
-    logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-    handlers=[logging.StreamHandler(sys.stdout)]
-)
-
-if __name__ == '__main__':
-    executor.start_polling(dispatcher, skip_updates=True)
